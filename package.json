@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-api-server-boilerplate",
+  "version": "1.0.0",
+  "description": "Minimal boilerplate for node.js API server",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "test": "NODE_ENV=test mocha tests/**/*.test.js --require @babel/register --exit",
+    "prod": "NODE_ENV=production babel-node src/index.js"
+  },
+  "repository": "https://github.com/6londe/nodejs-api-server-boilerplate",
+  "author": "6londe@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "http-status": "^1.5.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": ">=6.4.6",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.1",
+    "swagger-jsdoc": "^6.2.1",
+    "swagger-ui-express": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/node": "^7.18.6",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/register": "^7.18.6",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0"
+  }
+}
